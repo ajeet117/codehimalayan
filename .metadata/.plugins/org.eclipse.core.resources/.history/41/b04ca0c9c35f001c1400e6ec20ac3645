@@ -1,0 +1,57 @@
+package com.example.model;
+
+import java.io.Serializable;
+
+public class Courses implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	private long id;
+	private String name;
+	
+	Teacher teacher;
+	
+	public Courses()
+	{
+		
+	}
+	
+	public Courses(String name)
+	{
+		this.name=name;
+	}
+
+	public Courses(String name, Teacher teacher) {
+	
+		this.name = name;
+		this.teacher = teacher;
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Teacher getTeacher() {
+		return teacher;
+	}
+
+	public void setTeacher(Teacher teacher) {
+		this.teacher = teacher;
+	}
+	
+}

@@ -1,0 +1,15 @@
+package com.example.payload;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.example.model.Courses;
+
+public class StudentResponse {
+
+	private long id;
+	private String username;
+	private String email;
+	private String fullname;
+	private List<Courses> courses=new ArrayList<>();
+}
